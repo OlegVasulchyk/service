@@ -1,0 +1,31 @@
+.nav {
+    margin: 0px 0px 0px 0px;
+ }
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+
+
+    &__item {
+        margin-left: 55px;
+        text-decoration: none;
+        color: #fff;
+        font: 400 1.264rem 'sansationregular' , sans-serif;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &:first-of-type {
+            margin: 0;
+        }
+    }
+    &__link:hover {
+        color: #0d7a87;
+    }
+}
+
+
+
+

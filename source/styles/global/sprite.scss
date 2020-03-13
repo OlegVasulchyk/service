@@ -1,0 +1,167 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$adobe-systems-logo-name: 'adobe_systems_logo';
+$adobe-systems-logo-x: 0px;
+$adobe-systems-logo-y: 190px;
+$adobe-systems-logo-offset-x: 0px;
+$adobe-systems-logo-offset-y: -190px;
+$adobe-systems-logo-width: 162px;
+$adobe-systems-logo-height: 37px;
+$adobe-systems-logo-total-width: 328px;
+$adobe-systems-logo-total-height: 276px;
+$adobe-systems-logo-image: '../images/sprite.png';
+$adobe-systems-logo: (0px, 190px, 0px, -190px, 162px, 37px, 328px, 276px, '../images/sprite.png', 'adobe_systems_logo', );
+$behance-name: 'behance';
+$behance-x: 0px;
+$behance-y: 227px;
+$behance-offset-x: 0px;
+$behance-offset-y: -227px;
+$behance-width: 96px;
+$behance-height: 49px;
+$behance-total-width: 328px;
+$behance-total-height: 276px;
+$behance-image: '../images/sprite.png';
+$behance: (0px, 227px, 0px, -227px, 96px, 49px, 328px, 276px, '../images/sprite.png', 'behance', );
+$canva-name: 'canva';
+$canva-x: 0px;
+$canva-y: 0px;
+$canva-offset-x: 0px;
+$canva-offset-y: 0px;
+$canva-width: 108px;
+$canva-height: 102px;
+$canva-total-width: 328px;
+$canva-total-height: 276px;
+$canva-image: '../images/sprite.png';
+$canva: (0px, 0px, 0px, 0px, 108px, 102px, 328px, 276px, '../images/sprite.png', 'canva', );
+$cisco-logo-name: 'cisco-logo';
+$cisco-logo-x: 108px;
+$cisco-logo-y: 0px;
+$cisco-logo-offset-x: -108px;
+$cisco-logo-offset-y: 0px;
+$cisco-logo-width: 144px;
+$cisco-logo-height: 62px;
+$cisco-logo-total-width: 328px;
+$cisco-logo-total-height: 276px;
+$cisco-logo-image: '../images/sprite.png';
+$cisco-logo: (108px, 0px, -108px, 0px, 144px, 62px, 328px, 276px, '../images/sprite.png', 'cisco-logo', );
+$guideline-based-name: 'guideline-based';
+$guideline-based-x: 162px;
+$guideline-based-y: 190px;
+$guideline-based-offset-x: -162px;
+$guideline-based-offset-y: -190px;
+$guideline-based-width: 154px;
+$guideline-based-height: 26px;
+$guideline-based-total-width: 328px;
+$guideline-based-total-height: 276px;
+$guideline-based-image: '../images/sprite.png';
+$guideline-based: (162px, 190px, -162px, -190px, 154px, 26px, 328px, 276px, '../images/sprite.png', 'guideline-based', );
+$infosys-logo-name: 'infosys-logo';
+$infosys-logo-x: 0px;
+$infosys-logo-y: 148px;
+$infosys-logo-offset-x: 0px;
+$infosys-logo-offset-y: -148px;
+$infosys-logo-width: 180px;
+$infosys-logo-height: 42px;
+$infosys-logo-total-width: 328px;
+$infosys-logo-total-height: 276px;
+$infosys-logo-image: '../images/sprite.png';
+$infosys-logo: (0px, 148px, 0px, -148px, 180px, 42px, 328px, 276px, '../images/sprite.png', 'infosys-logo', );
+$instagram-name: 'instagram';
+$instagram-x: 252px;
+$instagram-y: 0px;
+$instagram-offset-x: -252px;
+$instagram-offset-y: 0px;
+$instagram-width: 76px;
+$instagram-height: 82px;
+$instagram-total-width: 328px;
+$instagram-total-height: 276px;
+$instagram-image: '../images/sprite.png';
+$instagram: (252px, 0px, -252px, 0px, 76px, 82px, 328px, 276px, '../images/sprite.png', 'instagram', );
+$invision-name: 'invision';
+$invision-x: 0px;
+$invision-y: 102px;
+$invision-offset-x: 0px;
+$invision-offset-y: -102px;
+$invision-width: 183px;
+$invision-height: 46px;
+$invision-total-width: 328px;
+$invision-total-height: 276px;
+$invision-image: '../images/sprite.png';
+$invision: (0px, 102px, 0px, -102px, 183px, 46px, 328px, 276px, '../images/sprite.png', 'invision', );
+$spritesheet-width: 328px;
+$spritesheet-height: 276px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($adobe-systems-logo, $behance, $canva, $cisco-logo, $guideline-based, $infosys-logo, $instagram, $invision, );
+$spritesheet: (328px, 276px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

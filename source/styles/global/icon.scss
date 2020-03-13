@@ -1,0 +1,33 @@
+
+
+.icon-adobe_systems_logo {
+    @include sprite ($adobe_systems_logo);
+}
+
+.icon-behance {
+    @include sprite ($behance);
+}
+
+.icon-canva {
+    @include sprite ($canva);
+}
+
+.icon-cisco-logo {
+    @include sprite ($cisco-logo);
+}
+
+.icon-guideline-based {
+    @include sprite ($guideline-based);
+}
+
+.icon-infosys-logo {
+    @include sprite ($infosys-logo);
+}
+
+.icon-instagram {
+    @include sprite ($instagram);
+}
+
+.icon-invision {
+    @include sprite ($invision);
+}
